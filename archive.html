@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アーカイブ</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style_archive.css" />
+  <style>
+    /* 下のインジケーターのアクティブスタイル */
+    .ellipse-5.active,
+    .ellipse-6.active,
+    .ellipse-7.active,
+    .ellipse-8.active,
+    .ellipse-9.active {
+      background-color: #333;
+    }
+
+    html,
+    body {
+      overflow-y: scroll;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE/Edge */
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+      /* Chrome/Safari */
+    }
+  </style>
+</head>
+
+<body>
+  <main class="archive">
+    <div class="div">
+      <div class="overlap-group">
+        <p class="element">
+          <span
+            class="text-wrapper">プロトタイプとして、二つの動作を実装しました。<br /><br />・まぶたの動作に合わせて図形が変化する<br />・眉の動きによって花火が打ち上がる<br /><br />来場者の方々(</span>
+          <span class="span">10</span>
+          <span class="text-wrapper">代〜</span>
+          <span class="span">60</span>
+          <span class="text-wrapper">代)に体験していただきました。<br /></span>
+        </p>
+        <p class="p">
+          <span
+            class="text-wrapper">目元の動きによって画面上の“バネ”が伸び縮みするシステムを実装。<br />目を動かすことで、ディスプレイ上のモノの質感や感触を感じる「め触り」を体験するワークショップを開催しました。<br />来場者の方々(幼児〜</span>
+          <span class="span">60</span>
+          <span class="text-wrapper">代)に体験していただきました。<br /></span>
+        </p>
+        <a href="index.html">
+          <img class="frame" src="img/header/logo.png" />
+        </a>
+        <img class="line" src="img/header/line.png" />
+
+        <nav>
+          <ul>
+            <li>
+              <a href="about.html" div class="div-wrapper">
+                <div class="text-wrapper-2">プロジェクト</div>
+              </a>
+            </li>
+            <li>
+              <a href="member.html" div class="frame-2">
+                <div class="text-wrapper-3">メンバー</div>
+              </a>
+            </li>
+            <li>
+              <a href="archive.html" class="frame-3">
+                <div class="text-wrapper-4">アーカイヴ</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="group">
+          <div class="text-wrapper-5">IAMAS OPEN HOUSE 2024</div>
+        </div>
+        <div class="group-2">
+          <div class="text-wrapper-6">あいちワークショップギャザリング mini</div>
+        </div>
+        <div class="text-wrapper-7">2024/7/20-21</div>
+        <div class="text-wrapper-8">2024/2/15</div>
+        <div class="overlap"><img class="rectangle" src="" /></div>
+        <div class="rectangle-wrapper"><img class="rectangle" src="" /></div>
+        <!-- 上のスライダーのインジケーター -->
+        <div class="indicator-top">
+          <div class="ellipse"></div>
+          <div class="ellipse-2"></div>
+          <div class="ellipse-3"></div>
+          <div class="ellipse-4"></div>
+        </div>
+        <div class="polygon"><img class="img" src="img/archive/right.png" /></div>
+        <div class="polygon-wrapper"><img class="polygon-2" src="img/archive/right.png" /></div>
+        <div class="img-wrapper"><img class="img" src="img/archive/right.png" /></div>
+        <div class="polygon-3"><img class="polygon-2" src="img/archive/right.png" /></div>
+        <!-- 下のスライダーのインジケーター -->
+        <div class="indicator-bottom">
+          <div class="ellipse-5"></div>
+          <div class="ellipse-6"></div>
+          <div class="ellipse-7"></div>
+          <div class="ellipse-8"></div>
+          <div class="ellipse-9"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+<script>
+  // スライダーA（上）の設定
+  const imagesA = [
+    "img/archive/oh.png",
+    "img/archive/oh1.png",
+    "img/archive/oh2.png",
+    "img/archive/oh3.png"
+  ];
+  let currentIndexA = 0;
+  const targetImageA = document.querySelector(".overlap .rectangle");
+
+  // 対応するインジケーター要素（A）
+  const indicatorsA = [
+    document.querySelector(".ellipse"),
+    document.querySelector(".ellipse-2"),
+    document.querySelector(".ellipse-3"),
+    document.querySelector(".ellipse-4")
+  ];
+
+  function showImageA(index) {
+    targetImageA.src = imagesA[index];
+    updateIndicatorsA(index);
+  }
+
+  function updateIndicatorsA(activeIndex) {
+    indicatorsA.forEach((el, idx) => {
+      if (idx === activeIndex) {
+        el.classList.add("active");
+      } else {
+        el.classList.remove("active");
+      }
+    });
+  }
+
+  document.querySelector(".polygon .img").addEventListener("click", () => {
+    currentIndexA = (currentIndexA + 1) % imagesA.length;
+    showImageA(currentIndexA);
+  });
+
+  document.querySelector(".polygon-wrapper .polygon-2").addEventListener("click", () => {
+    currentIndexA = (currentIndexA - 1 + imagesA.length) % imagesA.length;
+    showImageA(currentIndexA);
+  });
+
+  // スライダーB（下）の設定
+  const imagesB = [
+    "img/archive/gyaza.png",
+    "img/archive/gyaza1.png",
+    "img/archive/gyaza2.png",
+    "img/archive/gyaza3.png",
+    "img/archive/gyaza4.png"
+  ];
+  let currentIndexB = 0;
+  const targetImageB = document.querySelector(".rectangle-wrapper .rectangle");
+
+  // インジケーター要素（B）
+  const indicatorsB = [
+    document.querySelector(".ellipse-5"),
+    document.querySelector(".ellipse-6"),
+    document.querySelector(".ellipse-7"),
+    document.querySelector(".ellipse-8"),
+    document.querySelector(".ellipse-9")
+  ];
+
+  function showImageB(index) {
+    targetImageB.src = imagesB[index];
+    updateIndicatorsB(index);
+  }
+
+  function updateIndicatorsB(activeIndex) {
+    indicatorsB.forEach((el, idx) => {
+      if (idx === activeIndex) {
+        el.classList.add("active");
+      } else {
+        el.classList.remove("active");
+      }
+    });
+  }
+
+  document.querySelector(".img-wrapper .img").addEventListener("click", () => {
+    currentIndexB = (currentIndexB + 1) % imagesB.length;
+    showImageB(currentIndexB);
+  });
+
+  document.querySelector(".polygon-3 .polygon-2").addEventListener("click", () => {
+    currentIndexB = (currentIndexB - 1 + imagesB.length) % imagesB.length;
+    showImageB(currentIndexB);
+  });
+
+  // 初期表示
+  showImageA(currentIndexA);
+  showImageB(currentIndexB);
+</script>
+
+</html>
