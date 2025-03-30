@@ -190,8 +190,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
+    gap: 5px;
     padding-right: 20px;
+    padding-top: 10px;
   }
 
   .home .frame,
@@ -212,12 +213,12 @@
   }
 
   .home .img {
-    width: 80%;
+    width: 70%;
     max-width: 300px;
     height: auto;
-    left: 50%;
+    left: 37%;
     transform: translateX(-50%);
-    top: 20px;
+    top: 50px;
   }
 
   .home .line {
@@ -229,38 +230,46 @@
   .home .overlap-group {
     width: 90%;
     left: 5%;
-    top: 160px;
+    top: 130px;
     height: auto;
   }
 
   .home .ellipse,
-  .home .ellipse-2,
   .home .ellipse-3,
   .home .mask-group {
     width: 70vw;
     height: 70vw;
     max-width: 300px;
     max-height: 300px;
-    left: 0;
+    left: 0px;
+  }
+
+  .home .ellipse-2 {
+    width: 70vw;
+    height: 70vw;
+    max-width: 300px;
+    max-height: 300px;
+    left: 0px;
+    top: 5px;
   }
 
   .home .group {
     width: 40vw;
     height: auto;
-    top: 130px;
+    top: 100px;
     left: 45vw;
   }
 
   .home .component {
     width: 90%;
     left: 5%;
-    top: 350px;
+    top: 370px;
     height: auto;
     padding: 10px 0;
   }
 
   .home .text-wrapper-3 {
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
     left: 0;
     top: 0;
