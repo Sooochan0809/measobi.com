@@ -261,9 +261,9 @@
   }
 
   .home .component {
-    width: 90%;
-    left: 5%;
-    top: 370px;
+    width: 100%;
+    left: 0%;
+    top: 410px;
     height: auto;
     padding: 10px 0;
   }
