@@ -303,7 +303,7 @@
 }
 
 /* メディアクエリ（スマホ表示対応） */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -393,4 +393,81 @@
     letter-spacing: 0;
     line-height: normal;
   }
-}
+
+  .aboutproject .overlap-group {
+    width: 100%;
+    left: 5%;
+    top: 130px;
+    height: auto;
+  }
+
+  .aboutproject .ellipse {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    top: 10px;
+    left: 0px;
+    background-color: #fffeee;
+    border-radius: 270px;
+  }
+
+  .aboutproject .div {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    top: 10px;
+    left: 0px;
+    border-radius: 275px;
+    border: 10px dotted;
+    border-color: #ffa500;
+    transform: rotate(-90deg);
+  }
+
+  .aboutproject .ellipse-2 {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    top: 10px;
+    left: 70;
+    background-color: #ffffff;
+    border-radius: 270px;
+    border: 5px solid;
+    border-color: #ffa500;
+  }
+
+  .aboutproject .group-wrapper {
+    position: absolute;
+    top: 100px;
+    left: -45px;
+  }
+
+  .group-combined {
+    width: 65%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .aboutproject .group-40 {
+    position: absolute;
+    width: 305px;
+    height: 91px;
+    top: 170px;
+    left: 40px;
+  }
+
+  .aboutproject .text-wrapper-4 {
+    max-width: 70%;
+    margin-top: 70px auto 0;
+    position: relative;       /* ← ここ変更！ */
+    top: auto;
+    z-index: 100;
+    font-family: "IBM Plex Mono-Bold", Helvetica;
+    font-weight: 400;
+    color: #46361796;
+    font-size: 11px;
+    text-align: justify;
+    word-break: break-word;
+    line-height: 1.7;
+  }
+} */
