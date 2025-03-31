@@ -54,9 +54,7 @@
   line-height: normal;
 }
 
-/* 以下から修正 */
-
-.aboutproject .div-wrapper {
+.aboutproject .frame-1 {
   position: absolute;
   width: 74px;
   height: 23px;
@@ -65,7 +63,44 @@
   background-color: #fffffe;
 }
 
-.aboutproject .overlap-group {
+.aboutproject .text-wrapper-1 {
+  width: 74px;
+  top: -1px;
+  left: 0;
+  font-family: "IBM Plex Mono-Bold", Helvetica;
+  color: #46361796;
+  font-size: 18px;
+  position: absolute;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.aboutproject .frame-2 {
+  position: absolute;
+  width: 109px;
+  height: 0px;
+  top: 79px;
+  left: 1130px;
+  background-color: #fffffe;
+}
+
+.aboutproject .text-wrapper-2 {
+  width: 97px;
+  top: -1px;
+  left: 2px;
+  font-family: "IBM Plex Mono-Bold", Helvetica;
+  color: #46361796;
+  font-size: 18px;
+  position: absolute;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.aboutproject .overlap {
   position: absolute;
   width: 1007px;
   height: 550px;
@@ -82,21 +117,8 @@
   background-color: #fffeee;
   border-radius: 270px;
 }
-.aboutproject .div {
-  width: 74px;
-  top: -1px;
-  left: 0;
-  font-family: "IBM Plex Mono-Bold", Helvetica;
-  color: #46361796;
-  font-size: 18px;
-  position: absolute;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
-.aboutproject .div-1 {
+.aboutproject .div {
   position: absolute;
   width: 550px;
   height: 550px;
@@ -108,7 +130,7 @@
   transform: rotate(-90deg);
 }
 
-.aboutproject .ellipse-2 {
+.aboutproject .ellipse-1 {
   position: absolute;
   width: 540px;
   height: 540px;
@@ -148,9 +170,7 @@
   left: 0;
 }
 
-
-
-.aboutproject .text-wrapper-1 {
+.aboutproject .text-wrapper-3{
   width: 18px;
   top: 7px;
   left: 283px;
@@ -172,7 +192,7 @@
   left: 0;
 }
 
-.aboutproject .text-wrapper-2 {
+.aboutproject .text-wrapper-4 {
   width: 257px;
   top: 64px;
   left: 22px;
@@ -186,7 +206,7 @@
   line-height: normal;
 }
 
-.aboutproject .text-wrapper-3 {
+.aboutproject .text-wrapper-5 {
   width: 257px;
   top: 0;
   left: 22px;
@@ -200,7 +220,7 @@
   line-height: normal;
 }
 
-.aboutproject .text-wrapper-4 {
+.aboutproject .text-wrapper-6 {
   width: 379px;
   height: 322px;
   top: 270px;
@@ -215,7 +235,7 @@
   line-height: normal;
 }
 
-.aboutproject .overlap-8 {
+.aboutproject .overlap-1 {
   position: absolute;
   width: 1007px;
   height: 550px;
@@ -223,7 +243,7 @@
   left: 219px;
 }
 
-.aboutproject .text-wrapper-5 {
+.aboutproject .text-wrapper-7 {
   width: 373px;
   height: 322px;
   top: 230px;
@@ -254,7 +274,7 @@
   left: 109px;
 }
 
-.aboutproject .overlap-9 {
+.aboutproject .overlap-2 {
   position: absolute;
   width: 1007px;
   height: 550px;
@@ -262,7 +282,7 @@
   left: 219px;
 }
 
-.aboutproject .VR {
+.aboutproject .text-wrapper-8 {
   position: absolute;
   width: 379px;
   height: 322px;
@@ -285,14 +305,7 @@
   left: 119px;
 }
 
-.aboutproject .frame-2 {
-  position: absolute;
-  width: 109px;
-  height: 0px;
-  top: 79px;
-  left: 1130px;
-  background-color: #fffffe;
-}
+
 
 .aboutproject .frame-3 {
   position: absolute;
@@ -308,20 +321,6 @@
   height: 23px;
   top: 79px;
   left: 1130px;
-}
-
-.aboutproject .text-wrapper-6 {
-  width: 97px;
-  top: -1px;
-  left: 2px;
-  font-family: "IBM Plex Mono-Bold", Helvetica;
-  color: #46361796;
-  font-size: 18px;
-  position: absolute;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
 @media (max-width: 480px) {
@@ -350,7 +349,7 @@
   }
 
   .aboutproject .frame,
-  .aboutproject .div-wrapper,
+  .aboutproject .frame-1,
   .aboutproject .frame-2 {
     position: static;
     width: auto;
@@ -359,8 +358,8 @@
   }
 
   .aboutproject .text-wrapper,
-  .aboutproject .div,
-  .aboutproject .text-wrapper-6 {
+  .aboutproject .text-wrapper-1,
+  .aboutproject .text-wrapper-2 {
     position: static;
     font-size: 16px;
     text-align: right;
