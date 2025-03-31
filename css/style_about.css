@@ -22,6 +22,15 @@
   left: 219px;
 }
 
+.aboutproject .line {
+  position: absolute;
+  width: 1393px;
+  height: 1px;
+  top: 118px;
+  left: 23px;
+  object-fit: cover;
+}
+
 .aboutproject .frame {
   position: absolute;
   width: 121px;
@@ -31,6 +40,22 @@
   background-color: #fffffe;
 }
 
+.aboutproject .text-wrapper {
+  width: 112px;
+  top: -1px;
+  left: 5px;
+  font-family: "IBM Plex Mono-Bold", Helvetica;
+  color: #463617;
+  font-size: 18px;
+  position: absolute;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* 以下から修正 */
+
 .aboutproject .div-wrapper {
   position: absolute;
   width: 74px;
@@ -38,15 +63,6 @@
   top: 79px;
   left: 1026px;
   background-color: #fffffe;
-}
-
-.aboutproject .line {
-  position: absolute;
-  width: 1393px;
-  height: 1px;
-  top: 118px;
-  left: 23px;
-  object-fit: cover;
 }
 
 .aboutproject .overlap-group {
@@ -132,19 +148,7 @@
   left: 0;
 }
 
-.aboutproject .text-wrapper {
-  width: 112px;
-  top: -1px;
-  left: 5px;
-  font-family: "IBM Plex Mono-Bold", Helvetica;
-  color: #463617;
-  font-size: 18px;
-  position: absolute;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
+
 
 .aboutproject .text-wrapper-1 {
   width: 18px;
