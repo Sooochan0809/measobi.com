@@ -108,40 +108,6 @@
   left: 219px;
 }
 
-.aboutproject .ellipse {
-  position: absolute;
-  width: 540px;
-  height: 540px;
-  top: 5px;
-  left: 462px;
-  background-color: #fffeee;
-  border-radius: 270px;
-}
-
-.aboutproject .div {
-  position: absolute;
-  width: 550px;
-  height: 550px;
-  top: 0;
-  left: 457px;
-  border-radius: 275px;
-  border: 10px dotted;
-  border-color: #ffa500;
-  transform: rotate(-90deg);
-}
-
-.aboutproject .ellipse-1 {
-  position: absolute;
-  width: 540px;
-  height: 540px;
-  top: 5px;
-  left: 0;
-  background-color: #ffffff;
-  border-radius: 270px;
-  border: 5px solid;
-  border-color: #ffa500;
-}
-
 .aboutproject .group-wrapper {
   position: absolute;
   width: 461px;
@@ -154,7 +120,7 @@
   height: 65px;
 }
 
-.aboutproject .group-40 {
+.aboutproject .group-1 {
   position: absolute;
   width: 305px;
   height: 91px;
@@ -162,7 +128,7 @@
   left: 600px;
 }
 
-.aboutproject .group-41 {
+.aboutproject .group-2 {
   position: absolute;
   width: 303px;
   height: 26px;
@@ -170,7 +136,7 @@
   left: 0;
 }
 
-.aboutproject .text-wrapper-3{
+.aboutproject .text-wrapper-3 {
   width: 18px;
   top: 7px;
   left: 283px;
@@ -184,7 +150,7 @@
   line-height: normal;
 }
 
-.aboutproject .element-2 {
+.aboutproject .element {
   position: absolute;
   width: 274px;
   height: 25px;
@@ -266,7 +232,7 @@
   left: 77px;
 }
 
-.aboutproject .element-3 {
+.aboutproject .element-1 {
   position: absolute;
   width: 154px;
   height: 36px;
@@ -297,7 +263,7 @@
   line-height: normal;
 }
 
-.aboutproject .element-4 {
+.aboutproject .element-2 {
   position: absolute;
   width: 302px;
   height: 40px;
@@ -305,22 +271,39 @@
   left: 119px;
 }
 
-
-
-.aboutproject .frame-3 {
+/* 以下、円の描画 */
+.aboutproject .ellipse {
   position: absolute;
-  width: 74px;
-  height: 23px;
-  top: 79px;
-  left: 1026px;
+  width: 540px;
+  height: 540px;
+  top: 5px;
+  left: 462px;
+  background-color: #fffeee;
+  border-radius: 270px;
 }
 
-.aboutproject .frame-4 {
+.aboutproject .div {
   position: absolute;
-  width: 109px;
-  height: 23px;
-  top: 79px;
-  left: 1130px;
+  width: 550px;
+  height: 550px;
+  top: 0;
+  left: 457px;
+  border-radius: 275px;
+  border: 10px dotted;
+  border-color: #ffa500;
+  transform: rotate(-90deg);
+}
+
+.aboutproject .ellipse-1 {
+  position: absolute;
+  width: 540px;
+  height: 540px;
+  top: 5px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 270px;
+  border: 5px solid;
+  border-color: #ffa500;
 }
 
 @media (max-width: 480px) {
@@ -366,5 +349,9 @@
     font-family: "IBM Plex Mono-Bold", Helvetica;
     font-weight: 700;
     color: #46361796;
+  }
+
+  .aboutproject .text-wrapper {
+    color: #463617;
   }
 }
