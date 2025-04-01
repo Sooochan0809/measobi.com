@@ -6,12 +6,6 @@
   justify-content: center;
 }
 
-.archive .div {
-  width: 100%;
-  max-width: 1440px;
-  position: relative;
-}
-
 .archive .overlap-group {
   position: relative;
   width: 100%;
@@ -51,7 +45,7 @@
   font-weight: 200;
 }
 
-.archive .frame {
+.archive .title {
   position: absolute;
   width: 400px;
   height: 54px;
@@ -68,26 +62,26 @@
   object-fit: cover;
 }
 
-.archive .div-wrapper,
-.archive .frame-2,
-.archive .frame-3 {
+.archive .frame,
+.archive .frame-1,
+.archive .frame-2 {
   position: absolute;
   height: 23px;
   top: 79px;
   background-color: #fffffe;
 }
 
-.archive .div-wrapper {
+.archive .frame {
   width: 121px;
   left: 880px;
 }
 
-.archive .frame-2 {
+.archive .frame-1 {
   width: 74px;
   left: 1026px;
 }
 
-.archive .frame-3 {
+.archive .frame-2 {
   width: 109px;
   left: 1130px;
 }
@@ -364,9 +358,9 @@
     gap: 10px;
   }
 
-  .archive .div-wrapper,
-  .archive .frame-2,
-  .archive .frame-3 {
+  .archive .frame,
+  .archive .frame-1,
+  .archive .frame-2 {
     position: static;
     background: none;
     width: auto;
