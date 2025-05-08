@@ -1,7 +1,37 @@
-:root {
+/* :root {
     --primary-color: rgba(0, 147, 121, 1);
     --secondary-color: rgba(1, 109, 90, 1);
     --grey-1-color: rgba(184, 184, 184, 1);
     --grey-2-color: rgba(134, 134, 134, 1);
     --white-color: rgba(255, 255, 255, 1);
+  } */
+
+  :root {
+    --style-1: rgba(255, 166, 0, 1);
+    --style-2: rgba(29, 7, 192, 1);
+    --style-3: rgba(70, 70, 70, 1);
+    --title-font-family: "Inter", Helvetica;
+    --title-font-weight: 700;
+    --title-font-size: 96px;
+    --title-letter-spacing: 0px;
+    --title-line-height: normal;
+    --title-font-style: normal;
+    --head-1-font-family: "Inter", Helvetica;
+    --head-1-font-weight: 700;
+    --head-1-font-size: 64px;
+    --head-1-letter-spacing: 0px;
+    --head-1-line-height: normal;
+    --head-1-font-style: normal;
+    --head-2-font-family: "Inter", Helvetica;
+    --head-2-font-weight: 700;
+    --head-2-font-size: 54px;
+    --head-2-letter-spacing: 0px;
+    --head-2-line-height: normal;
+    --head-2-font-style: normal;
+    --text-font-family: "Inter", Helvetica;
+    --text-font-weight: 400;
+    --text-font-size: 40px;
+    --text-letter-spacing: 0px;
+    --text-line-height: normal;
+    --text-font-style: normal;
   }
